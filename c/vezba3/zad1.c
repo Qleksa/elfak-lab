@@ -1,4 +1,4 @@
-#include <stdio.h>;
+vezba3 #include <stdio.h>;
 
 
 void main() {
