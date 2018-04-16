@@ -13,7 +13,7 @@ void main()
 	scanf("%f", &x);
 
 	do
-    {
+    	{
         ex *= x;
 		fakt *= n;
 		exp_p = exp;
