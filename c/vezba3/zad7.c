@@ -8,7 +8,7 @@ int main() {
 	printf("Unesi broj elemenata niza A i broj elemenata niza B (max 100): ");
 	do
 	{
-		scanf("%hd %hd", &N, &M); 																	//h prefiks za konverziju tipa short
+		scanf("%hd %hd", &N, &M); 				//h prefiks za konverziju tipa short
 	} while (N > 100 || M > 100);
 	
 	printf("Unesi clanove niza A: \n");
@@ -23,15 +23,15 @@ int main() {
 		scanf("%d", &B[i]);
 	}
 
-	for (int i = 0; i < ((N < M) ? N : M); i++) { 								// " i " se krece DO broja elemenata kraceg niza
+	for (int i = 0; i < ((N < M) ? N : M); i++) { 			// " i " se krece DO broja elemenata kraceg niza
 		if (A[i] < B[i]) {
 			printf("%d %d ", A[i], B[i]);
 		}else {
 			printf("%d %d ", B[i], A[i]);
 		}
 	}
-	for (int i = ((N < M) ? N : M); i < ((N > M) ? N : M); i++) { // " i " se krece OD broja elemenata kraceg niza
-		if (N > M) {											  												// do broja elemenata duzeg niza
+	for (int i = ((N < M) ? N : M); i < ((N > M) ? N : M); i++) {   // " i " se krece OD broja elemenata kraceg niza
+		if (N > M) {						// do broja elemenata duzeg niza
 			printf("%d ", A[i]);
 		}
 		else
