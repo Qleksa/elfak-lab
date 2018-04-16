@@ -19,7 +19,7 @@ void main()
 		exp_p = exp;
 		exp += ex / fakt;
 		n++;
-	} while(fabs(exp - exp_p) > e);
+	} while (fabs(exp - exp_p) > e);
 
 	printf("exp = %7.10f", exp);
 }
